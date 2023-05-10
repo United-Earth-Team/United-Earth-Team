@@ -1,6 +1,6 @@
 # United Earth Team
 
-![Logo of United Earth Team](./wm-shape288-bc1e467b032af31f3195dce4371f4d8a22e6781530a3c48f2be5d6eb7fd5f9aa.webp)
+![Logo of United Earth Team](wm-shape288-bc1e467b032af31f3195dce4371f4d8a22e6781530a3c48f2be5d6eb7fd5f9aa.webp)
 
 ---
 
