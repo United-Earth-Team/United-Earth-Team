@@ -1,10 +1,3 @@
-# United Earth Team
-
-![Logo of United Earth Team](https://avatars.githubusercontent.com/u/124475235?s=200&v=4)
-
-
----
-
 ## About Us
 
 We are a fan-made team consisting of enthusiasts of the *The Wandering Earth* movie series.
