@@ -13,7 +13,7 @@ We are a fan-made team consisting of enthusiasts of the *The Wandering Earth* mo
 
 If you are interested in our open-source projects, we warmly welcome your participation!
 
-Contact us right now! 👇
+Contact us right now! 
 
 Email: `mail@uet.life`
 
@@ -25,6 +25,6 @@ Email: `mail@uet.life`
 
 如果你对我们的开源项目感兴趣，我们非常欢迎你的参与！
 
-现在就联系我们吧！👇
+现在就联系我们吧！
 
 邮箱：`mail@uet.life`
