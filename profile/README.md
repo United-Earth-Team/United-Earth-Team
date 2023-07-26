@@ -1,6 +1,6 @@
 # United Earth Team
 
-![Logo of United Earth Team](https://github.com/United-Earth-Team/.github/assets/34389622/46338aec-c9ff-4984-becd-2aaf1af0857e)
+![Logo of United Earth Team](https://avatars.githubusercontent.com/u/124475235?s=200&v=4)
 
 
 ---
