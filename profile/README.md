@@ -8,7 +8,7 @@ If you are interested in our open-source projects, we warmly welcome your partic
 
 Contact us right now! 
 
-Email: `mail@uet.life`
+Email: `service@uegov.world`
 
 ## 关于我们
 
@@ -20,4 +20,4 @@ Email: `mail@uet.life`
 
 现在就联系我们吧！
 
-邮箱：`mail@uet.life`
+邮箱：`service@uegov.world`
