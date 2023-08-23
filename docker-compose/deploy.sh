@@ -34,7 +34,7 @@ DOCKER_COMPOSE_FILE=${RELATIVE_SHELL_DIR}/${2:-"compose.yaml"}
 MAX_CHECK_TIMES=5
 
 echo "deploying $CONTAINER_NAME..."
-sudo docker compose -f $DOCKER_COMPOSE_FILE down --rmi all
+sudo docker compose -f $DOCKER_COMPOSE_FILE -p $CONTAINER_NAME down --rmi all
 sudo docker compose -p $CONTAINER_NAME -f $DOCKER_COMPOSE_FILE up -d
 
 sleep 5
