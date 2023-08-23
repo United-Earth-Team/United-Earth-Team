@@ -9,4 +9,4 @@ be able to leverage the templates that it provides.
 
 ## Folders
 
-`workflows` contains common GitHub action workflows for different purposes.
+`docker-compose` contains common GitHub action workflows and scripts for different purposes.
