@@ -9,4 +9,4 @@ be able to leverage the templates that it provides.
 
 ## Folders
 
-`docker-compose` contains common GitHub action workflows and scripts for different purposes.
+`docker-compose` contains common scripts UET project which uses docker-compose as a deploy method.
