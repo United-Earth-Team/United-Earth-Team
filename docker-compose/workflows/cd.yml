@@ -26,6 +26,11 @@ jobs:
 
       - run: docker compose version
 
+      - name: Download lint script
+        run: |
+          curl -o "lint.sh" "https://raw.githubusercontent.com/United-Earth-Team/.github/main/docker-compose/lint.sh"
+          chmod +x ./lint.sh
+
       - name: Run lint
         run: |
           ./lint.sh
@@ -51,4 +56,3 @@ jobs:
           script: |
             cd ${{ secrets.SERVER_DESTINATION }}
             ./deploy.sh
-

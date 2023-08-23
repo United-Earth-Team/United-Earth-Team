@@ -18,6 +18,11 @@ jobs:
       - name: Check docker compose version
         run: docker compose version
 
+      - name: Download lint script
+        run: |
+          curl -o "lint.sh" "https://raw.githubusercontent.com/United-Earth-Team/.github/main/docker-compose/lint.sh"
+          sudo chmod +x ./lint.sh
+
       - name: Run lint
         run: |
           ./lint.sh
