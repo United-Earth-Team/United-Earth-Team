@@ -6,3 +6,7 @@ organization.
 
 **This repository is public**. It needs to be public for other repositories to
 be able to leverage the templates that it provides.
+
+## Folders
+
+`workflows` contains common GitHub action workflows for different purposes.
