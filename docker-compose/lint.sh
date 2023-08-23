@@ -17,15 +17,15 @@ if [[ "$1" == "-h" || "$1" == "--help" ]]; then
     display_help
 fi
 
-COMPOSE_YAML=${1: -"compose.yaml"}
 RELATIVE_SHELL_DIR=$(dirname "$BASH_SOURCE")
+COMPOSE_YAML=$RELATIVE_SHELL_DIR/${1: -"compose.yaml"}
 
 sh_has_error=0  # flag variable, 0 means no errors found, 1 means at least one error was found
 
 # find all .sh files in the project directory and check their syntax
 find "$RELATIVE_SHELL_DIR" -type f -name "*.sh" | while read -r script_file; do
     echo "checking syntax for: $script_file"
-    if ! bash -n "$script_file"; then
+    if ! bash -n "$RELATIVE_SHELL_DIR/$script_file"; then
         sh_has_error=1  # set flag to indicate error
     fi
 done
