@@ -17,10 +17,10 @@ jobs:
 
     steps:
       - name: Download repository
-        uses: actions/checkout@main
+        uses: actions/checkout@v3
 
       - name: Install docker compose
-        uses: KengoTODA/actions-setup-docker-compose@main
+        uses: KengoTODA/actions-setup-docker-compose@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -36,7 +36,7 @@ jobs:
           ./lint.sh
 
       - name: Upload files to server
-        uses: AEnterprise/rsync-deploy@master
+        uses: AEnterprise/rsync-deploy@v1.0.2
         env:
           DEPLOY_KEY: ${{ secrets.SERVER_DEPLOY_KEY }}
           ARGS: -avz --delete
@@ -47,7 +47,7 @@ jobs:
           SERVER_DESTINATION: ${{ secrets.SERVER_DESTINATION }} # Deploy to the target folder
 
       - name: Deploy
-        uses: appleboy/ssh-action@master
+        uses: appleboy/ssh-action@v1.0.0
         with:
           host: ${{ secrets.SERVER_HOST }}
           username: ${{ secrets.SERVER_USERNAME }}

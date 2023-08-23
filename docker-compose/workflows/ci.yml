@@ -11,7 +11,7 @@ jobs:
       - name: Download repository
         uses: actions/checkout@main
       
-      - uses: KengoTODA/actions-setup-docker-compose@main
+      - uses: KengoTODA/actions-setup-docker-compose@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
