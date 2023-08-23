@@ -18,7 +18,7 @@ if [[ "$1" == "-h" || "$1" == "--help" ]]; then
 fi
 
 RELATIVE_SHELL_DIR=$(dirname "$BASH_SOURCE")
-COMPOSE_YAML=$RELATIVE_SHELL_DIR/${1: -"compose.yaml"}
+COMPOSE_YAML=$RELATIVE_SHELL_DIR/${1:-"compose.yaml"}
 
 sh_has_error=0  # flag variable, 0 means no errors found, 1 means at least one error was found
 
@@ -35,7 +35,7 @@ docker compose -f $COMPOSE_YAML config > /dev/null
 docker_compose_return_code=$?
 
 # exit with appropriate status
-if [ $sh_has_error -eq 0 ] && [ $docker_compose_return_code -eq 0] ; then
+if [ $sh_has_error -eq 0 ] && [ $docker_compose_return_code -eq 0 ]; then
     echo "check passed."
     exit 0
 else

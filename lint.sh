@@ -7,7 +7,7 @@ has_error=0  # Flag variable, 0 means no errors found, 1 means at least one erro
 # Find all .sh files in the project directory and check their syntax
 find "$RELATIVE_SHELL_DIR" -type f -name "*.sh" | while read -r script_file; do
     echo "checking syntax for: $script_file"
-    if ! bash -n "$script_file"; then
+    if ! bash -n "$RELATIVE_SHELL_DIR/$script_file"; then
         has_error=1  # Set flag to indicate error
     fi
 done
