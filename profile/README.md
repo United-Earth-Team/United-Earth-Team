@@ -20,4 +20,4 @@ Email: `service@uegov.world`
 
 现在就联系我们吧！
 
-邮箱：`service@uegov.world`
+邮箱：`service@uet.life`
